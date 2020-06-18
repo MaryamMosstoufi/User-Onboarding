@@ -108,9 +108,6 @@ function App() {
     postNewUser(newUser)
   };
 
-  // useEffect(() => {
-  //   getUsers()
-  // }, [])
   useEffect(() => {
     formSchema.isValid(formValues).then(valid => {
       setDisabled(!valid)
