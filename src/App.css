@@ -73,4 +73,11 @@ input[type="checkbox"] {
 button {
   width: 100%;
   line-height: 34px;
+  margin-top: 20px;
+}
+
+.errors {
+  color: red;
+  font-size: 10px;
+  float: right;
 }

@@ -22,6 +22,9 @@ export default function Form(props) {
                         type='text'
                     />
                 </label>
+                <div className='errors'>
+                    <div>{errors.name}</div>
+                </div>
                 <label>Email&nbsp;
                     <input
                         value={values.email}
@@ -30,6 +33,9 @@ export default function Form(props) {
                         type='email'
                     />
                 </label>
+                <div className='errors'>
+                    <div>{errors.email}</div>
+                </div>
                 <label>Password&nbsp;
                     <input
                         value={values.password}
@@ -38,6 +44,9 @@ export default function Form(props) {
                         type='password'
                     />
                 </label>
+                <div className='errors'>
+                    <div>{errors.password}</div>
+                </div>
                 <label>Terms of Service
                     <input
                         checked={values.terms}
@@ -46,7 +55,10 @@ export default function Form(props) {
                         type='checkbox'
                     />
                 </label>
-                <button>Submit</button>
+                <div className='errors'>
+                    <div>{errors.terms}</div>
+                </div>
+                <button disabled={disabled}>Submit</button>
             </form>
         </div >
     )
